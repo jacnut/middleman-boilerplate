@@ -1,1 +1,20 @@
-// Your footer style
+#footer {
+background: #141414;
+color:gainsboro;
+padding: 30px;
+}
+#footer a {
+color: gainsboro;
+font-size: 30px;
+letter-spacing: 20px;
+transition: color 0.5s ease;
+}
+#footer li{
+padding: 10px;
+}
+#footer a:hover {
+color: red;
+}
+#footer p{
+margin-top: 17px;
+}

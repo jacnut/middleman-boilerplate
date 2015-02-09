@@ -25,7 +25,7 @@
             <span class="icon-bar"></span>
           </button>
           <% link_to "/index.html", class: "navbar-brand" do %>
-            <%= image_tag 'logo.svg' %>
+            <%= image_tag '../images/logo.svg' %>
           <% end %>
         </div>
 
@@ -56,6 +56,49 @@
       </div><!-- /.container-fluid -->
     </nav>
 
+      <div id="banner">
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-6"><h1>Styler writer</h1>
+              <p>Pen's are made for writing</p>
+              <p>And that's just what they'll do...</p>
+              <%= link_to "I WANT ONE", "", class: "btn btn-primary btn-lg" %>
+            </div>
+            <div class="col-xs-6"></div>
+          </div>
+        </div>
+      </div>
+
     <%= yield %>
-  </body>
-</html>
+
+        <div id="footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-4">
+              <ul class="list-inline">
+
+              <li><% link_to "#" do %>
+                <i class="fa fa-youtube"></i>
+              <% end %></li>
+              <li><% link_to "#" do %>
+                <i class="fa fa-instagram"></i>
+              <% end %></li>
+              <li><% link_to "#" do %>
+                <i class="fa fa-facebook"></i>
+              <% end %></li>
+              <li><% link_to "#" do %>
+                <i class="fa fa-twitter"></i>
+              <% end %></li>
+              </ul>
+            </div>
+            <div class="col-xs-8 text-right">
+              <p>Stylus is a fictive product of Jacnut Incorporated</p>
+            </div>
+          </div>
+          <!-- Map -->
+          <!-- Footer -->
+          <!-- Including Bootstrap JS (with its jQuery dependency) so that dynamic components work -->
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+          <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+        </body>
+      </html>
